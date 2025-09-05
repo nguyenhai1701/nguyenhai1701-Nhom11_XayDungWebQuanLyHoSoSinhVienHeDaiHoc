@@ -4,7 +4,7 @@
     </a>
 </h2>
 <h2 align="center">
-    HOTEL MANAGEMENT SYSTEM
+    Open Source Software Development
 </h2>
 <div align="center">
     <p align="center">
@@ -18,18 +18,9 @@
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 
 </div>
+<b>## 📖 1. Giới thiệu</b>
 
-## 📖 1. Giới thiệu
-Hệ thống quản lý phòng khách sạn (Hotel Management System) được phát triển bằng PHP và MySQL. Đây là một ứng dụng web hoàn chỉnh giúp quản lý các hoạt động của khách sạn bao gồm quản lý khách hàng, phòng, loại phòng và đặt phòng.
-
-### Tính năng chính:
-- 👥 **Quản lý khách hàng**: Thêm, sửa, xóa thông tin khách hàng
-- 🏨 **Quản lý loại phòng**: Quản lý các loại phòng với giá và sức chứa khác nhau
-- 🚪 **Quản lý phòng**: Theo dõi trạng thái phòng (trống, đã thuê, bảo trì)
-- 📅 **Quản lý đặt phòng**: Tạo, cập nhật và theo dõi các đơn đặt phòng
-- 📊 **Dashboard**: Thống kê tổng quan về tình hình hoạt động
-- 🔍 **Tìm kiếm**: Tìm kiếm nhanh trong tất cả các module 
-- 🌙 **Dark Mode**: Chế độ giao diện tối/sáng
+Ứng dụng web quản lý hồ sơ sinh viên đại học được xây dựng bằng PHP và sử dụng MySQL làm hệ quản trị cơ sở dữ liệu. Hệ thống hỗ trợ nhà trường và cán bộ quản lý trong việc theo dõi thông tin sinh viên, quá trình học tập, điểm số, lớp học, cũng như các hoạt động đoàn – hội liên quan.Giải pháp này giúp tự động hóa quy trình quản lý, giảm thiểu sai sót, và tăng tính minh bạch trong công tác lưu trữ, tra cứu hồ sơ. Đồng thời, hệ thống cung cấp các báo cáo tổng hợp nhanh chóng và chính xác, góp phần nâng cao hiệu quả quản trị và trải nghiệm của sinh viên.
 
 ## 🔧 2. Các công nghệ được sử dụng
 <div align="center">
@@ -68,42 +59,42 @@ Hệ thống quản lý phòng khách sạn (Hotel Management System) được p
 
 #### 3.2.1. Tải project
 ```bash
-git clone https://github.com/1677030156NguyenMinhPhuongKHMT17-01/Nhom5_XayDungWebQuanLyPhongKhachSan.git
-cd Nhom5_XayDungWebQuanLyPhongKhachSan
+https://github.com/Dragonkin1402/Nhom2-QLHomestay.git
 ```
 
 #### 3.2.2. Cài đặt XAMPP (Windows)
 1. Tải và cài đặt [XAMPP](https://www.apachefriends.org/download.html)
 2. Khởi động Apache và MySQL từ XAMPP Control Panel
-3. Sao chép project vào thư mục `C:\xampp\htdocs\BTL\`
+3. Sao chép project vào thư mục `C:\xampp\htdocs\KHMT1701\`
 
 #### 3.2.3. Cài đặt và cấu hình MySQL Workbench
 1. Tải và cài đặt [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 2. Khởi động MySQL Workbench
 3. Tạo kết nối mới:
-   - Connection Name: `Hotel Management`
+   - Connection Name: `Tai`
    - Hostname: `127.0.0.1` hoặc `localhost`
    - Port: `3306`
    - Username: `root`
    - Password: (để trống nếu chưa đặt mật khẩu)
-4. Kết nối và tạo database mới bằng lệnh:
 
-```sql
--- Tạo database
-CREATE DATABASE ql_phongks;
-USE ql_phongks;
+#### 3.2.4. Cấu hình kết nối database
+Chỉnh sửa file `functions/db_connection.php`:
+```php
+$servername = "localhost";
+$username = "root"; 
+$password = ""; // Hoặc mật khẩu MySQL của bạn
+$dbname = "homestay_db";
+```
 
--- Tạo bảng users
-CREATE TABLE `users` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `username` varchar(45) NOT NULL,
-  `password` varchar(45) NOT NULL,
-  `role` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `username_UNIQUE` (`username`)
-);
+### 3.3. Chạy ứng dụng
 
--- Tạo bảng guests (khách hàng)
-CREATE TABLE `guests` (
-  `id` int NOT NUL123
+1. Đảm bảo Apache và MySQL đang chạy trong XAMPP
+2. Truy cập: `http://localhost/Tai-KHMT/`
+3. Đăng nhập với tài khoản:
+   - **Username**: admin
+   - **Password**: 123
+
+### 3.4. Cấu trúc project
+
+
 
