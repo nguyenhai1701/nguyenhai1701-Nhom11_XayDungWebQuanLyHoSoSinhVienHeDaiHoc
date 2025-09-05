@@ -8,12 +8,14 @@
 </h2>
 <div align="center">
     <p align="center">
-        <img src="[docs/logo/aiotlab_logo.png](https://github.com/nguyenhai1701/nguyenhai1701-Nhom11_XayDungWebQuanLyHoSoSinhVienHeDaiHoc/blob/main/khmt1701/images/aiotlab_logo.png?raw=true)" alt="AIoTLab Logo" width="170"/>
-        <img src="[docs/logo/fitdnu_logo.png](https://github.com/nguyenhai1701/nguyenhai1701-Nhom11_XayDungWebQuanLyHoSoSinhVienHeDaiHoc/blob/main/khmt1701/images/fitdnu_logo.png?raw=true)" alt="AIoTLab Logo" width="180"/>
+        <img src="docs/logo/aiotlab_logo.png" alt="AIoTLab Logo" width="170"/>
+        <img src="docs/logo/fitdnu_logo.png" alt="AIoTLab Logo" width="180"/>
         <img src="docs/logo/dnu_logo.png" alt="DaiNam University Logo" width="200"/>
     </p>
 
-
+[![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
+[![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)
+[![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 
 </div>
 <b>## 📖 1. Giới thiệu</b>
@@ -90,9 +92,35 @@ $dbname = "homestay_db";
 2. Truy cập: `http://localhost/Tai-KHMT/`
 3. Đăng nhập với tài khoản:
    - **Username**: admin
-   - **Password**: 123
+   - **Password**: 123456
 
 ### 3.4. Cấu trúc project
 
-
-
+```
+BTL/
+├── index.php               
+├── functions/             
+│   ├── auth.php
+│   ├── db_connection.php
+│   ├── room_functions.php
+│   ├── customer_functions.php
+│   ├── payment_functions.php
+│   └── booking_functions.php
+├── handle/                  
+│   ├── login_process.php
+│   ├── logout_process.php
+│   └── room_process.php
+│   └── customer_process.php
+│   └── payment_process.php
+│   └── booking_process.php
+├── views/                  
+│   ├── dashboard.php        
+│   ├── menu.php          
+│   ├── customer.php          
+│   ├── room.php           
+│   ├── payment.php       
+│   ├── booking.php        
+│   
+├── css/                   
+└── images/                
+```
