@@ -55,32 +55,43 @@
 - **XAMPP** (khuyến nghị cho Windows)
 - **MySQL Workbench** (để quản lý database)
 
-3.2. Cài đặt
-3.2.1. Tải project
-https://github.com/Dragonkin1402/Nhom2-QLHomestay.git
-3.2.2. Cài đặt XAMPP (Windows)
-Tải và cài đặt XAMPP
-Khởi động Apache và MySQL từ XAMPP Control Panel
-Sao chép project vào thư mục C:\xampp\htdocs\KHMT1701\
-3.2.3. Cài đặt và cấu hình MySQL Workbench
-Tải và cài đặt MySQL Workbench
-Khởi động MySQL Workbench
-Tạo kết nối mới:
-Connection Name: Tai
-Hostname: 127.0.0.1 hoặc localhost
-Port: 3306
-Username: root
-Password: (để trống nếu chưa đặt mật khẩu)
-3.2.4. Cấu hình kết nối database
-Chỉnh sửa file functions/db_connection.php:
 
+### 3.2. Cài đặt
+
+
+#### 3.2.1. Tải project
+```bash
+https://github.com/Dragonkin1402/Nhom2-QLHomestay.git
+```
+
+#### 3.2.2. Cài đặt XAMPP (Windows)
+1. Tải và cài đặt [XAMPP](https://www.apachefriends.org/download.html)
+2. Khởi động Apache và MySQL từ XAMPP Control Panel
+3. Sao chép project vào thư mục `C:\xampp\htdocs\KHMT1701\`
+
+#### 3.2.3. Cài đặt và cấu hình MySQL Workbench
+1. Tải và cài đặt [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+2. Khởi động MySQL Workbench
+3. Tạo kết nối mới:
+   - Connection Name: `Tai`
+   - Hostname: `127.0.0.1` hoặc `localhost`
+   - Port: `3306`
+   - Username: `root`
+   - Password: (để trống nếu chưa đặt mật khẩu)
+
+#### 3.2.4. Cấu hình kết nối database
+Chỉnh sửa file `functions/db_connection.php`:
+```php
 $servername = "localhost";
 $username = "root"; 
 $password = ""; // Hoặc mật khẩu MySQL của bạn
 $dbname = "homestay_db";
-3.3. Chạy ứng dụng
-Đảm bảo Apache và MySQL đang chạy trong XAMPP
-Truy cập: http://localhost/Tai-KHMT/
-Đăng nhập với tài khoản:
-Username: admin
-Password: 123456
+```
+
+### 3.3. Chạy ứng dụng
+
+1. Đảm bảo Apache và MySQL đang chạy trong XAMPP
+2. Truy cập: `http://localhost/Tai-KHMT/`
+3. Đăng nhập với tài khoản:
+   - **Username**: admin
+   - **Password**: 123456
