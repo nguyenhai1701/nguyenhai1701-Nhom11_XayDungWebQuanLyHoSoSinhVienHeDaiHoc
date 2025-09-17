@@ -59,7 +59,7 @@
 
 #### 3.2.1. Tải project
 ```bash
-https://github.com/Dragonkin1402/Nhom2-QLHomestay.git
+https://github.com/nguyenhai1701/nguyenhai1701-Nhom11_XayDungWebQuanLyHoSoSinhVienHeDaiHoc
 ```
 
 #### 3.2.2. Cài đặt XAMPP (Windows)
