@@ -61,7 +61,7 @@
 
 #### 3.2.1. Tải project
 ```bash
-https://github.com/Dragonkin1402/Nhom2-QLHomestay.git
+https://github.com/nguyenhai1701/nguyenhai1701-Nhom11_XayDungWebQuanLyHoSoSinhVienHeDaiHoc
 ```
 
 #### 3.2.2. Cài đặt XAMPP (Windows)
@@ -73,7 +73,7 @@ https://github.com/Dragonkin1402/Nhom2-QLHomestay.git
 1. Tải và cài đặt [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 2. Khởi động MySQL Workbench
 3. Tạo kết nối mới:
-   - Connection Name: `Tai`
+   - Connection Name: `duy`
    - Hostname: `127.0.0.1` hoặc `localhost`
    - Port: `3306`
    - Username: `root`
@@ -91,7 +91,7 @@ $dbname = "homestay_db";
 ### 3.3. Chạy ứng dụng
 
 1. Đảm bảo Apache và MySQL đang chạy trong XAMPP
-2. Truy cập: `http://localhost/Tai-KHMT/`
+2. Truy cập: `http://localhost/duy-KHMT/`
 3. Đăng nhập với tài khoản:
    - **Username**: admin
-   - **Password**: 123456
+   - **Password**: 123
